@@ -1,0 +1,39 @@
+$bg-color: #AA0601;
+$word-color: #FFFFFF;
+$hover-color: #F9DBBD;
+
+.nav{
+    background-color: $bg-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 88px;
+
+    .img-box{
+        a{
+            img{
+                width: 80px;
+                height: 48.57px;
+            }
+        }
+    }
+
+    ul{
+        display: flex;
+
+        li{
+            a{
+                font-size: 20px;
+                line-height: 30px;
+                text-decoration: none;
+                padding: 0 32px;
+                color: $word-color;
+
+                &:hover{
+                    color: $hover-color;
+                }
+            }
+        }
+    }
+
+}
