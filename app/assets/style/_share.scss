@@ -1,0 +1,20 @@
+$bg-color: #AA0601;
+$word-white-color: #FFFFFF;
+$word-color: #650300;
+$hover-color: #F9DBBD;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+html{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+@mixin bg-cover{
+    background-size: cover;
+    background-position: center center;
+}

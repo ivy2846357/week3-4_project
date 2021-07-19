@@ -1,0 +1,25 @@
+.banner{
+    background-image: url(../images/banner.png);
+    height: 840px;
+    display: flex;
+    align-items: center;
+
+
+    // @include bg-cover;
+
+    .title{
+        text-align: right;
+        margin-left: 939px;
+
+        h4{
+            font-size: 36px;
+            color: $word-color;
+        }
+
+        h3{
+            font-size: 64px;
+            color: $word-color;
+            font-weight: bold;
+        }
+    }
+}
