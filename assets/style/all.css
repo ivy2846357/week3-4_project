@@ -162,4 +162,24 @@ html {
           .footer .container .copyright ul li a:hover {
             color: #F9DBBD; }
 
+.banner {
+  background-image: url(../images/banner.png);
+  height: 840px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .banner .title {
+    text-align: right;
+    margin-left: 939px; }
+    .banner .title h4 {
+      font-size: 36px;
+      color: #650300; }
+    .banner .title h3 {
+      font-size: 64px;
+      color: #650300;
+      font-weight: bold; }
+
 /*# sourceMappingURL=all.css.map */
