@@ -2,6 +2,17 @@ $bg-color: #AA0601;
 $word-color: #FFFFFF;
 $hover-color: #F9DBBD;
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+html{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
 .nav{
     background-color: $bg-color;
     display: flex;
@@ -9,14 +20,12 @@ $hover-color: #F9DBBD;
     justify-content: space-between;
     padding: 30px 88px;
 
-    .img-box{
         a{
             img{
                 width: 80px;
                 height: 48.57px;
             }
         }
-    }
 
     ul{
         display: flex;
@@ -31,9 +40,106 @@ $hover-color: #F9DBBD;
 
                 &:hover{
                     color: $hover-color;
+                    font-weight: bold;
                 }
             }
         }
+    }
+
+}
+
+.footer{
+    background-color: $bg-color;
+    padding: 44px 0 39px 0;
+
+    .container{
+        display: flex;
+        flex-direction: column;
+
+        .link{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .footer-nav{
+                display: flex;
+
+                li{
+                    a{
+                        color: $word-color;
+                        text-decoration: none;
+                        margin-right: 48px;
+
+                        &:hover{
+                            color: $hover-color;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+
+            .social-icon{
+                display: flex;
+
+                li{
+                    margin-left: 32px;
+                }
+            }
+        }
+
+        .contact{
+            padding: 36px 0;
+            border-bottom: 1px solid $word-color;
+
+            li{
+                display: flex;
+                align-items: center;
+
+                img{
+                    width: 36px;
+                    height: 36px;
+                    margin-right: 22px;
+                }
+
+                h3{
+                    font-size: 36px;
+                    line-height: 54px;
+                    color: $word-color;
+                }
+
+            }
+
+        }
+
+        .copyright{
+            display: flex;
+            justify-content: space-between;
+            padding: 39px 0;
+
+            p{
+                font-size: 16px;
+                color: $word-color;
+            }
+
+            ul{
+                display: flex;
+
+                li{
+
+                    a{
+                        text-decoration: none;
+                        font-size: 14px;
+                        color: $word-color;
+                        margin-left: 48px;
+
+                        &:hover{
+                            color: $hover-color;
+                        }
+                    }
+                }
+            }
+        }
+
     }
 
 }
