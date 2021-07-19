@@ -52,7 +52,16 @@ html {
 
 .container {
   max-width: 1110px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 60px 0; }
+
+.title {
+  color: #650300;
+  font-size: 48px;
+  line-height: 72px;
+  text-align: center;
+  margin-bottom: 52.5px;
+  font-weight: bold; }
 
 .nav {
   background-color: #AA0601;
@@ -171,27 +180,19 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  .banner .title {
+  .banner .banner-title {
     text-align: right;
     margin-left: 939px; }
-    .banner .title h4 {
+    .banner .banner-title h4 {
       font-size: 36px;
       color: #650300; }
-    .banner .title h3 {
+    .banner .banner-title h3 {
       font-size: 64px;
       color: #650300;
       font-weight: bold; }
 
 .info {
-  background: rgba(214, 165, 164, 0.051);
-  padding: 60px 0; }
-  .info .container h2 {
-    color: #650300;
-    font-size: 48px;
-    line-height: 72px;
-    text-align: center;
-    margin-bottom: 52.5px;
-    font-weight: bold; }
+  background: rgba(214, 165, 164, 0.051); }
   .info .container ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -223,5 +224,34 @@ html {
       .info .container ul li p {
         font-size: 16px;
         line-height: 24px; }
+
+.glasses .container ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 32px; }
+  .glasses .container ul li img {
+    width: 635px; }
+  .glasses .container ul li h2 {
+    font-size: 48px;
+    color: #AA0601;
+    font-style: italic;
+    font-weight: bold;
+    padding: 0 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .glasses .container ul li h2 img {
+      width: 44px;
+      margin: 0 10px; }
 
 /*# sourceMappingURL=all.css.map */
