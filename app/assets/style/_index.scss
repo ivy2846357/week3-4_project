@@ -1,3 +1,4 @@
+// 首頁banner
 .banner{
     background-image: url(../images/banner.png);
     height: 840px;
@@ -22,6 +23,7 @@
     }
 }
 
+//店家簡介
 .info{
   background: $bg-pink;  
   
@@ -58,6 +60,7 @@
   }
 }
 
+//經典系列鏡框
 .glasses{
     .container{
         ul{
@@ -91,6 +94,7 @@
     }
 }
 
+//聯名設計鏡框
 .co-branding{
     background-image: url(../images/bg.png);
     @include bg-cover;
@@ -107,6 +111,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            //圖片加上白色遮罩
             background-color: rgba(255, 255, 255, .6);
             background-blend-mode: lighten;
             transition: all .3s;
@@ -134,10 +139,12 @@
 
 }
 
+//白色標題
 .title-white{
     color: $word-white-color;
 }
 
+//顧客回饋
 .customer-recommend{
     padding-bottom: 80px;
 
@@ -189,10 +196,12 @@
     }
 }
 
+//黑色標題
 .title-black{
     color: #000;
 }
 
+//聯絡我們
 .contact{
   background: $bg-pink;
 
