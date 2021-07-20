@@ -3,9 +3,7 @@
     height: 840px;
     display: flex;
     align-items: center;
-
-
-    // @include bg-cover;
+    @include bg-cover;
 
     .banner-title{
         text-align: right;
@@ -74,6 +72,7 @@
                 }
 
                 h2{
+                    width: 420px;
                     font-size: 48px;
                     color: $bg-red;
                     font-style: italic;
@@ -90,4 +89,51 @@
             }
         }
     }
+}
+
+.co-branding{
+    background-image: url(../images/bg.png);
+    @include bg-cover;
+
+    ul{
+        display: flex;
+        margin-bottom: 80px;
+
+        li{
+            width: 540px;
+            height: 455px;
+            @include bg-cover;
+            margin: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(255, 255, 255, .6);
+            background-blend-mode: lighten;
+            transition: all .3s;
+
+            &:hover{
+                background-color: rgba(255, 255, 255, 0);
+            }
+
+            h3{
+                font-size: 72px;
+                color: $bg-red;
+                font-weight: bold;
+            }
+
+        }
+
+        .double-A{
+            background-image: url(../images/product-8.png);
+        }
+
+        .youth{
+            background-image: url(../images/product-9.png);
+        }
+    }
+
+}
+
+.title-white{
+    color: $word-white-color;
 }
