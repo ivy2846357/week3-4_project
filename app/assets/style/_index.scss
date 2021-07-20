@@ -194,5 +194,53 @@
 }
 
 .contact{
-  background: $bg-pink;  
+  background: $bg-pink;
+
+  form{
+    display: flex;
+    flex-direction: column;
+    width: 730px;
+    padding: 60px 0 90px 0;
+
+    h2{
+        margin-bottom: 24px;
+    }
+
+    p{
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+
+    label{
+        font-size: 16px;
+        margin-bottom: 4px;
+    }
+
+    input,textarea{
+        margin-bottom: 16px;
+        background-color: $bg-pink;
+        padding: 12px 16px;
+    }
+
+    .agree{
+        margin-bottom: 40px;
+    }
+
+    .button{
+        width: 350px;
+        padding: 16px 143px;
+        background-color: $bg-red;
+        color: #FFF;
+        align-self: center;
+        outline: none;
+        border: 0px;
+        cursor: pointer;
+
+        &:hover{
+            background-color: $word-color;
+        }
+    }
+
+  }
 }
