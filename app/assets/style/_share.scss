@@ -26,6 +26,17 @@ html{
     font-weight: bold;
 }
 
+.product-title{
+    font-size: 42px;
+    margin-top: 80px;
+    line-height: 63px;
+}
+.product-sub-title{
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 40px;
+}
+
 @mixin bg-cover{
     background-size: cover;
     background-position: center center;
