@@ -260,12 +260,12 @@ html {
 .co-branding {
   background-image: url(../images/bg.png);
   background-size: cover;
-  background-position: center center; }
+  background-position: center center;
+  padding-bottom: 80px; }
   .co-branding ul {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    margin-bottom: 80px; }
+    display: flex; }
     .co-branding ul li {
       width: 540px;
       height: 455px;
@@ -299,5 +299,58 @@ html {
 
 .title-white {
   color: #FFFFFF; }
+
+.customer-recommend {
+  padding-bottom: 80px; }
+  .customer-recommend ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .customer-recommend ul li {
+      width: 255px;
+      margin: 0 15px;
+      border: 1px solid #DEE2E6;
+      -webkit-box-shadow: 0px 2px 6px #00000029;
+              box-shadow: 0px 2px 6px #00000029;
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s; }
+      .customer-recommend ul li:hover {
+        -webkit-box-shadow: 0px 2px 8px #acacac;
+                box-shadow: 0px 2px 8px #acacac; }
+      .customer-recommend ul li img {
+        font-size: 0px; }
+      .customer-recommend ul li .recommend {
+        padding: 16px;
+        height: 204px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+        .customer-recommend ul li .recommend h3 {
+          font-size: 14px;
+          color: #212529;
+          margin-bottom: 8px; }
+        .customer-recommend ul li .recommend p {
+          font-size: 16px;
+          line-height: 24px;
+          color: #212529; }
+        .customer-recommend ul li .recommend h5 {
+          font-size: 14px;
+          color: #707070;
+          -ms-flex-item-align: end;
+              align-self: flex-end; }
+
+.title-black {
+  color: #000; }
+
+.contact {
+  background: rgba(214, 165, 164, 0.051); }
 
 /*# sourceMappingURL=all.css.map */
