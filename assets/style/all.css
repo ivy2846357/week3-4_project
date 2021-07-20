@@ -179,7 +179,9 @@ html {
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  background-size: cover;
+  background-position: center center; }
   .banner .banner-title {
     text-align: right;
     margin-left: 939px; }
@@ -239,6 +241,7 @@ html {
   .glasses .container ul li img {
     width: 635px; }
   .glasses .container ul li h2 {
+    width: 420px;
     font-size: 48px;
     color: #AA0601;
     font-style: italic;
@@ -253,5 +256,48 @@ html {
     .glasses .container ul li h2 img {
       width: 44px;
       margin: 0 10px; }
+
+.co-branding {
+  background-image: url(../images/bg.png);
+  background-size: cover;
+  background-position: center center; }
+  .co-branding ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 80px; }
+    .co-branding ul li {
+      width: 540px;
+      height: 455px;
+      background-size: cover;
+      background-position: center center;
+      margin: 15px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      background-color: rgba(255, 255, 255, 0.6);
+      background-blend-mode: lighten;
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s; }
+      .co-branding ul li:hover {
+        background-color: rgba(255, 255, 255, 0); }
+      .co-branding ul li h3 {
+        font-size: 72px;
+        color: #AA0601;
+        font-weight: bold; }
+    .co-branding ul .double-A {
+      background-image: url(../images/product-8.png); }
+    .co-branding ul .youth {
+      background-image: url(../images/product-9.png); }
+
+.title-white {
+  color: #FFFFFF; }
 
 /*# sourceMappingURL=all.css.map */
