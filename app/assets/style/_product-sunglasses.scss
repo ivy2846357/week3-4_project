@@ -45,7 +45,7 @@
     }
 }
 
-.optical-content{
+.sunglasses-content{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -59,13 +59,13 @@
             margin-right: 30px;
             margin-bottom: 104px;
 
-            &:nth-child(4n){
+            &:nth-child(3n){
                 margin-right: 0;
             }
 
             .img-box{
-                width: 255px;
-                height: 164px;
+                width: 350px;
+                height: 224px;
                 overflow: hidden;
                 @include bg-cover;
                 cursor: pointer;
@@ -105,39 +105,6 @@
                     background-color: #B75929;
                 }
             }
-        }
-    }
-}
-
-.product-page{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 160px;
-
-    li{
-        border: 1px solid #555555;
-        display: flex;
-        align-items: center;
-        
-        a{
-            padding: 12px 16px;
-            font-size: 19px;
-            line-height: 29px;
-            text-decoration: none;
-            color: #555555;
-
-            &:hover{
-                background-color: #F2F2F2;
-                color: #555555;
-            }
-        }
-    }
-
-    .page-active{
-        background-color: #000;
-
-        a{
-            color: $word-white-color;
         }
     }
 }
