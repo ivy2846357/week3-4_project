@@ -76,6 +76,14 @@ html {
 .product-nav-active {
   border-bottom: 8px solid #AA0601 !important; }
 
+.store-title {
+  font-size: 48px;
+  font-weight: bold;
+  padding: 16px;
+  border-left: 8px solid #9F1213;
+  margin-top: 96px;
+  margin-bottom: 60px; }
+
 .nav {
   background-color: #AA0601;
   display: -webkit-box;
@@ -646,5 +654,70 @@ html {
           background-color: #5F3E2D; }
         .sunglasses-content ul li .color .color-light {
           background-color: #B75929; }
+
+.place-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .place-form label {
+    font-size: 24px;
+    margin-right: 20px; }
+  .place-form select {
+    width: 324px;
+    height: 45px;
+    padding: 8px 19px; }
+
+.store-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0; }
+  .store-list .border {
+    border: 1px solid #00000020; }
+  .store-list li {
+    max-width: 350px;
+    margin-right: 30px;
+    margin-bottom: 32px; }
+    .store-list li:nth-child(3n) {
+      margin-right: 0px; }
+    .store-list li .img-box {
+      height: 224px;
+      background-size: cover;
+      background-position: center center; }
+    .store-list li h2 {
+      font-size: 24px;
+      color: #212529;
+      padding: 12px 24px; }
+    .store-list li ul {
+      padding: 22px 27px; }
+      .store-list li ul li {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-bottom: 8px;
+        font-size: 20px; }
+        .store-list li ul li:nth-last-child(1) {
+          margin-bottom: 0px; }
+        .store-list li ul li img {
+          width: 18px;
+          height: 18px;
+          margin-right: 12.04px; }
+    .store-list li button {
+      width: 350px;
+      padding: 20px 107px;
+      display: block;
+      background-color: #000;
+      color: #FFF;
+      outline: none;
+      border: 0;
+      cursor: pointer;
+      font-size: 19px; }
+      .store-list li button:hover {
+        background-color: #650300; }
 
 /*# sourceMappingURL=all.css.map */
