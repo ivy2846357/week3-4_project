@@ -37,6 +37,10 @@ html{
     margin-bottom: 40px;
 }
 
+.product-nav-active{
+    border-bottom: 8px solid $bg-red !important;
+}
+
 @mixin bg-cover{
     background-size: cover;
     background-position: center center;
