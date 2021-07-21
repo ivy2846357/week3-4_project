@@ -445,10 +445,13 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .product-banner img {
-    display: block; }
+  .product-banner li {
+    width: 960px;
+    height: 304px;
+    background-size: cover;
+    background-position: center center; }
 
-.product-content {
+.optical-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -460,22 +463,28 @@ html {
       -ms-flex-align: center;
           align-items: center;
   padding: 0; }
-  .product-content ul {
+  .optical-content ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
-    .product-content ul li {
+    .optical-content ul li {
       margin-right: 30px;
       margin-bottom: 104px; }
-      .product-content ul li:nth-child(4n) {
+      .optical-content ul li:nth-child(4n) {
         margin-right: 0; }
-      .product-content ul li .img-box {
+      .optical-content ul li .img-box {
         width: 255px;
         height: 164px;
-        overflow: hidden; }
-      .product-content ul li .product-info {
+        overflow: hidden;
+        background-size: cover;
+        background-position: center center;
+        cursor: pointer; }
+        .optical-content ul li .img-box:hover {
+          -webkit-box-shadow: 0px 2px 6px #00000029;
+                  box-shadow: 0px 2px 6px #00000029; }
+      .optical-content ul li .product-info {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -484,21 +493,21 @@ html {
                 justify-content: space-between;
         font-size: 24px;
         line-height: 36px; }
-        .product-content ul li .product-info h3 {
+        .optical-content ul li .product-info h3 {
           color: #AA0601;
           font-weight: bold; }
-      .product-content ul li .color {
+      .optical-content ul li .color {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex; }
-        .product-content ul li .color .color-box {
+        .optical-content ul li .color .color-box {
           width: 24px;
           height: 24px;
           border-radius: 4px;
           margin-right: 8px; }
-        .product-content ul li .color .color-dark {
+        .optical-content ul li .color .color-dark {
           background-color: #5F3E2D; }
-        .product-content ul li .color .color-light {
+        .optical-content ul li .color .color-light {
           background-color: #B75929; }
 
 .product-page {
@@ -530,5 +539,112 @@ html {
     background-color: #000; }
     .product-page .page-active a {
       color: #FFFFFF; }
+
+.product-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0; }
+  .product-nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .product-nav ul li {
+      border-left: 1px solid #DCDCDC;
+      border-right: 1px solid #DCDCDC;
+      border-bottom: 8px solid transparent; }
+      .product-nav ul li:hover {
+        border-bottom: 8px solid #AA0601; }
+      .product-nav ul li a {
+        padding: 27px 92px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        color: #000;
+        font-weight: bold;
+        font-size: 32px;
+        text-decoration: none; }
+        .product-nav ul li a img {
+          width: 44px;
+          height: 44px;
+          margin-right: 10px; }
+
+.product-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .product-banner li {
+    width: 960px;
+    height: 304px;
+    background-size: cover;
+    background-position: center center; }
+
+.sunglasses-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0; }
+  .sunglasses-content ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .sunglasses-content ul li {
+      margin-right: 30px;
+      margin-bottom: 104px; }
+      .sunglasses-content ul li:nth-child(3n) {
+        margin-right: 0; }
+      .sunglasses-content ul li .img-box {
+        width: 350px;
+        height: 224px;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center center;
+        cursor: pointer; }
+        .sunglasses-content ul li .img-box:hover {
+          -webkit-box-shadow: 0px 2px 6px #00000029;
+                  box-shadow: 0px 2px 6px #00000029; }
+      .sunglasses-content ul li .product-info {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        font-size: 24px;
+        line-height: 36px; }
+        .sunglasses-content ul li .product-info h3 {
+          color: #AA0601;
+          font-weight: bold; }
+      .sunglasses-content ul li .color {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        .sunglasses-content ul li .color .color-box {
+          width: 24px;
+          height: 24px;
+          border-radius: 4px;
+          margin-right: 8px; }
+        .sunglasses-content ul li .color .color-dark {
+          background-color: #5F3E2D; }
+        .sunglasses-content ul li .color .color-light {
+          background-color: #B75929; }
 
 /*# sourceMappingURL=all.css.map */
