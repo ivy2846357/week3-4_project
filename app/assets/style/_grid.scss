@@ -1,0 +1,14 @@
+
+//平板格式
+@mixin pad(){
+    @media (max-width: 992px){
+        @content;
+    }
+}
+
+//手機格式
+@mixin phone{
+    @media (max-width: 767px){
+        @content;
+    }
+}
