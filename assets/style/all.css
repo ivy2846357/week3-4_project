@@ -116,6 +116,9 @@ html {
 .footer {
   background-color: #AA0601;
   padding: 44px 0 39px 0; }
+  @media (max-width: 992px) {
+    .footer {
+      padding: 38px 48px; } }
   .footer .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -206,6 +209,9 @@ html {
   .banner .banner-title {
     text-align: right;
     margin-left: 939px; }
+    @media (max-width: 992px) {
+      .banner .banner-title {
+        margin-left: 297.5px; } }
     .banner .banner-title h4 {
       font-size: 36px;
       color: #650300; }
@@ -220,10 +226,16 @@ html {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
     .info .container ul li {
+      width: 22%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -235,6 +247,10 @@ html {
           -ms-flex-align: center;
               align-items: center;
       margin: 0 15px; }
+      @media (max-width: 992px) {
+        .info .container ul li {
+          width: 45%;
+          padding: 34px 53px; } }
       .info .container ul li img {
         width: 83.33px;
         margin-bottom: 27.04px; }
@@ -248,21 +264,36 @@ html {
         font-size: 16px;
         line-height: 24px; }
 
+.glasses .container ul .reserve {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse; }
+  @media (max-width: 992px) {
+    .glasses .container ul .reserve {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
+
 .glasses .container ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 32px; }
   .glasses .container ul li img {
     width: 635px; }
+    @media (max-width: 992px) {
+      .glasses .container ul li img {
+        width: 390px; } }
   .glasses .container ul li h2 {
-    width: 420px;
+    width: 520px;
     font-size: 48px;
     color: #AA0601;
     font-style: italic;
@@ -274,6 +305,10 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+    @media (max-width: 992px) {
+      .glasses .container ul li h2 {
+        width: 250px;
+        font-size: 28px; } }
     .glasses .container ul li h2 img {
       width: 44px;
       margin: 0 10px; }
@@ -283,10 +318,16 @@ html {
   background-size: cover;
   background-position: center center;
   padding-bottom: 80px; }
+  @media (max-width: 992px) {
+    .co-branding {
+      padding-bottom: 56px; } }
   .co-branding ul {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
     .co-branding ul li {
       width: 540px;
       height: 455px;
@@ -307,12 +348,19 @@ html {
       -webkit-transition: all .3s;
       -o-transition: all .3s;
       transition: all .3s; }
+      @media (max-width: 992px) {
+        .co-branding ul li {
+          width: 330px;
+          height: 278px; } }
       .co-branding ul li:hover {
         background-color: rgba(255, 255, 255, 0); }
       .co-branding ul li h3 {
         font-size: 72px;
         color: #AA0601;
         font-weight: bold; }
+        @media (max-width: 992px) {
+          .co-branding ul li h3 {
+            font-size: 32px; } }
     .co-branding ul .double-A {
       background-image: url(../images/product-8.png); }
     .co-branding ul .youth {
@@ -323,10 +371,20 @@ html {
 
 .customer-recommend {
   padding-bottom: 80px; }
+  @media (max-width: 992px) {
+    .customer-recommend {
+      padding-bottom: 56px; } }
   .customer-recommend ul {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    @media (max-width: 992px) {
+      .customer-recommend ul {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; } }
     .customer-recommend ul li {
       width: 255px;
       margin: 0 15px;
@@ -336,11 +394,17 @@ html {
       -webkit-transition: all .3s;
       -o-transition: all .3s;
       transition: all .3s; }
+      @media (max-width: 992px) {
+        .customer-recommend ul li {
+          width: 45%;
+          margin-bottom: 32px; } }
       .customer-recommend ul li:hover {
         -webkit-box-shadow: 0px 2px 8px #acacac;
                 box-shadow: 0px 2px 8px #acacac; }
-      .customer-recommend ul li img {
-        font-size: 0px; }
+      .customer-recommend ul li .img-box {
+        height: 256px;
+        background-size: cover;
+        background-position: center center; }
       .customer-recommend ul li .recommend {
         padding: 16px;
         height: 204px;
@@ -354,6 +418,9 @@ html {
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between; }
+        @media (max-width: 992px) {
+          .customer-recommend ul li .recommend {
+            padding: 24px; } }
         .customer-recommend ul li .recommend h3 {
           font-size: 14px;
           color: #212529;
@@ -383,6 +450,9 @@ html {
             flex-direction: column;
     width: 730px;
     padding: 60px 0 90px 0; }
+    @media (max-width: 992px) {
+      .contact form {
+        padding: 40px 159px; } }
     .contact form h2 {
       margin-bottom: 24px; }
     .contact form p {
