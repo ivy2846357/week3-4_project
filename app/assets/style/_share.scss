@@ -41,12 +41,54 @@ html{
     border-bottom: 8px solid $bg-red !important;
 }
 
+.product-page{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 160px;
+
+    li{
+        border: 1px solid #555555;
+        display: flex;
+        align-items: center;
+        
+        a{
+            padding: 12px 16px;
+            font-size: 19px;
+            line-height: 29px;
+            text-decoration: none;
+            color: #555555;
+
+            &:hover{
+                background-color: #F2F2F2;
+                color: #555555;
+            }
+        }
+    }
+
+    .page-active{
+        background-color: #000;
+
+        a{
+            color: $word-white-color;
+        }
+    }
+}
+
 .store-title{
     font-size: 48px;
     font-weight: bold;
     padding: 16px;
     border-left: 8px solid #9F1213;
     margin-top: 96px;
+    margin-bottom: 60px;
+}
+
+.blog-title{
+    font-size: 48px;
+    font-weight: bold;
+    padding: 16px;
+    border-left: 8px solid #9F1213;
+    margin-top: 40px;
     margin-bottom: 60px;
 }
 
