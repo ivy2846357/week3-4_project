@@ -76,12 +76,50 @@ html {
 .product-nav-active {
   border-bottom: 8px solid #AA0601 !important; }
 
+.product-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 160px; }
+  .product-page li {
+    border: 1px solid #555555;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .product-page li a {
+      padding: 12px 16px;
+      font-size: 19px;
+      line-height: 29px;
+      text-decoration: none;
+      color: #555555; }
+      .product-page li a:hover {
+        background-color: #F2F2F2;
+        color: #555555; }
+  .product-page .page-active {
+    background-color: #000; }
+    .product-page .page-active a {
+      color: #FFFFFF; }
+
 .store-title {
   font-size: 48px;
   font-weight: bold;
   padding: 16px;
   border-left: 8px solid #9F1213;
   margin-top: 96px;
+  margin-bottom: 60px; }
+
+.blog-title {
+  font-size: 48px;
+  font-weight: bold;
+  padding: 16px;
+  border-left: 8px solid #9F1213;
+  margin-top: 40px;
   margin-bottom: 60px; }
 
 .nav {
@@ -588,36 +626,6 @@ html {
         .optical-content ul li .color .color-light {
           background-color: #B75929; }
 
-.product-page {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 160px; }
-  .product-page li {
-    border: 1px solid #555555;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .product-page li a {
-      padding: 12px 16px;
-      font-size: 19px;
-      line-height: 29px;
-      text-decoration: none;
-      color: #555555; }
-      .product-page li a:hover {
-        background-color: #F2F2F2;
-        color: #555555; }
-  .product-page .page-active {
-    background-color: #000; }
-    .product-page .page-active a {
-      color: #FFFFFF; }
-
 .product-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -871,5 +879,78 @@ html {
       font-size: 16px;
       line-height: 24px;
       padding: 0 80px; }
+
+.article-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 0; }
+  .article-list .article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 60px; }
+    .article-list .article .img-box {
+      width: 635px;
+      height: 400px;
+      background-size: cover;
+      background-position: center center;
+      margin-right: 30px; }
+    .article-list .article .article-info {
+      width: 445px;
+      position: relative; }
+      .article-list .article .article-info .df-c {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        margin-bottom: 24px; }
+      .article-list .article .article-info h2 {
+        font-size: 32px;
+        line-height: 63px;
+        color: #650300; }
+      .article-list .article .article-info h3 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        font-size: 20px;
+        line-height: 30px; }
+      .article-list .article .article-info h4 {
+        font-size: 16px;
+        line-height: 24px;
+        color: rgba(0, 0, 0, 0.7); }
+      .article-list .article .article-info p {
+        font-size: 20px;
+        line-height: 30px;
+        color: #555555; }
+      .article-list .article .article-info a {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        color: #650300;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 36px;
+        line-height: 54px; }
+        .article-list .article .article-info a:hover {
+          color: #AA0601; }
 
 /*# sourceMappingURL=all.css.map */
