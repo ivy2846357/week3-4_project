@@ -1,0 +1,146 @@
+.breadcrumb{
+    display: flex;
+    padding: 8px 0;
+
+    li{
+        margin-right: 5px;
+
+        &:after{
+            content: '/';
+            margin-left: 5px;
+        }
+
+        a{
+            color: #000;
+            text-decoration: none;
+
+            &:hover{
+                color: $bg-red;
+            }
+        }
+    }
+}
+
+.tags{
+    display: flex;
+    padding: 0;
+}
+
+.tag{
+    font-size: 24px;
+    line-height: 36px;
+    color: $bg-red;
+    margin-right: 16px;
+    font-weight: bold;
+}
+
+.blog-content{
+    display: flex;
+    padding: 0;
+
+    .article-content{
+        width: 825px;
+        padding: 0;
+        margin-right: 30px;
+    
+        .article-title{
+    
+            h2{
+                font-size: 48px;
+                line-height: 95px;
+            }
+    
+            h3{
+                font-size: 28px;
+                line-height: 42px;
+                margin-bottom: 24px;
+            }
+        }
+
+        .img-box{
+            height: 539px;
+            @include bg-cover;
+            margin-bottom: 24px;
+        }
+
+        p{
+            font-size: 20px;
+            line-height: 30px;
+            color: rgba(0, 0, 0, .6);
+            margin-bottom: 40px;
+        }
+
+        .share-link{
+            display: flex;
+            align-items: center;
+            padding-bottom: 21px;
+            border-bottom: 1px solid #707070;
+
+            h3{
+                font-size: 20px;
+                line-height: 30px;
+                margin-right: 20px;
+            }
+
+            li{
+                img{
+                    width: 24px;
+                    height: 24px;
+                    margin-right: 16px;
+                }
+            }
+        }
+
+        .page-link{
+            padding-top: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 160px;
+        }
+
+        li{
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                color: #000;
+
+                &:hover{
+                    color: $bg-red;
+                }
+
+                h3{
+                    padding: 0 12px;
+                }
+            }
+        }
+
+        .reserve{
+            flex-direction: row-reverse;
+        }
+    }
+
+    .tag-list{
+        width: 254px;
+        
+        li{
+            display: flex;
+            align-items: center;
+            padding: 8px 0;
+
+            img{
+                margin-right: 12px;
+            }
+
+            h3{
+                font-size: 28px;
+                line-height: 42px;
+                color: $bg-red;
+                font-weight: bold;
+            }
+        }
+        }
+
+}
