@@ -1,4 +1,4 @@
-.place-form{
+.shop-form{
     display: flex;
     align-items: center;
 
@@ -14,7 +14,7 @@
 
 }
 
-.store-list{
+.shop-info{
     display: flex;
     flex-wrap: wrap;
     padding: 0;
@@ -61,25 +61,12 @@
                     height: 18px;
                     margin-right: 12.04px;
                 }
+
+                iframe{
+                    width: 635px;
+                    height: 422px;
+                }
             }
-        }
-
-        a{
-            width: 350px;
-            padding: 20px 137px;
-            display: block;
-            background-color: #000;
-            color: #FFF;
-            outline: none;
-            border: 0;
-            cursor: pointer;
-            font-size: 19px;
-            line-height: 27px;
-            text-decoration: none;
-
-            &:hover{
-                background-color: $word-color;
-            } 
         }
     }
 }
