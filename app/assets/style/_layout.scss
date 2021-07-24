@@ -74,6 +74,13 @@
 
                 li{
                     margin-left: 32px;
+                    border-radius: 10px;
+
+                    img:hover{
+                        background-color: rgba(0, 0, 0, .2);
+                        background-blend-mode: screen;
+                        border-radius: 10px;
+                    }
                 }
             }
         }
@@ -92,10 +99,15 @@
                     margin-right: 22px;
                 }
 
-                h3{
+                a{
                     font-size: 36px;
                     line-height: 54px;
                     color: $word-white-color;
+                    text-decoration: none;
+
+                    &:hover{
+                        color: $hover-color;
+                    }
                 }
 
             }

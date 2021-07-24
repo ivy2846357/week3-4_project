@@ -76,6 +76,7 @@
             font-size: 19px;
             line-height: 27px;
             text-decoration: none;
+            @include transition;
 
             &:hover{
                 background-color: $word-color;

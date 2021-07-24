@@ -27,11 +27,18 @@
 }
 
 .tag{
-    font-size: 24px;
-    line-height: 36px;
-    color: $bg-red;
-    margin-right: 16px;
-    font-weight: bold;
+    a{
+        font-size: 24px;
+        line-height: 36px;
+        color: $bg-red;
+        margin-right: 16px;
+        font-weight: bold;
+        text-decoration: none;
+
+        &:hover{
+            color: $hover-color;
+        }
+    }
 }
 
 .blog-content{
@@ -123,7 +130,7 @@
     }
 
     .tag-list{
-        width: 254px;
+        width: 150px;
         
         li{
             display: flex;
@@ -141,6 +148,6 @@
                 font-weight: bold;
             }
         }
-        }
+       }
 
 }

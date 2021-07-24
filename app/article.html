@@ -5,6 +5,21 @@ engine: ejs
 current: article
 ---
 
+<ul class="blog-nav">
+    <div class="container">
+        <ul class="blog-menu">
+            <li><a href="#">最新消息</a></li>
+            <li><a href="#">特別企劃</a></li>
+            <li><a href="#">新品上市</a></li>
+            <li><a href="#">鏡框小知識</a></li>
+        </ul>
+        <div class="search-list">
+            <img src="assets/images/icon-search.svg" alt="search">
+            <input type="text">
+        </div>
+    </div>
+</ul>
+
 <ul class="breadcrumb container">
     <li><a href="#">首頁</a></li>
     <li><a href="#">部落格</a></li>
@@ -13,8 +28,8 @@ current: article
 </ul>
 
 <ul class="tags container">
-    <li class="tag">#special</li>
-    <li class="tag">#event</li>
+    <li class="tag"><a href="#">#special</a></li>
+    <li class="tag"><a href="#">#event</a></li>
 </ul>
 
 <div class="blog-content container">
@@ -75,16 +90,16 @@ current: article
         </ul>
     </div>
     <ul class="tag-list">
-        <li>
+        <li class="tag-title">
             <img src="assets/images/icon-tag.svg" alt="tag">
             <h3>TAGS</h3>
         </li>
-        <li class="tag">#special</li>
-        <li class="tag">#sale</li>
-        <li class="tag">#new_item</li>
-        <li class="tag">#interview</li>
-        <li class="tag">#trivia</li>
-        <li class="tag">#news</li>
-        <li class="tag">#event</li>
+        <li class="tag"><a href="#">#special</a></li>
+        <li class="tag"><a href="#">#sale</a></li>
+        <li class="tag"><a href="#">#new_item</a></li>
+        <li class="tag"><a href="#">#interview</a></li>
+        <li class="tag"><a href="#">#trivia</a></li>
+        <li class="tag"><a href="#">#news</a></li>
+        <li class="tag"><a href="#">#event</a></li>
     </ul>
 </div>
