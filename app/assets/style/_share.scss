@@ -85,7 +85,13 @@ html{
 .product-page{
     display: flex;
     justify-content: center;
+    margin-top: 96px;
     margin-bottom: 160px;
+
+    @include pad(){
+        margin-top: 65px;
+        margin-bottom: 96px;
+    }
 
     li{
         border: 1px solid #555555;
