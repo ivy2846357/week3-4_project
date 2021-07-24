@@ -124,7 +124,12 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 96px;
   margin-bottom: 160px; }
+  @media (max-width: 992px) {
+    .product-page {
+      margin-top: 65px;
+      margin-bottom: 96px; } }
   .product-page li {
     border: 1px solid #555555;
     display: -webkit-box;
@@ -633,28 +638,37 @@ html {
       -ms-flex-align: center;
           align-items: center;
   padding: 0; }
-  .optical-content ul {
+  .optical-content .optical-product-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
-    .optical-content ul li {
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .optical-content .optical-product-list .optical-product {
+      width: 255px;
       margin-right: 30px;
       margin-bottom: 104px; }
-      .optical-content ul li:nth-child(4n) {
+      .optical-content .optical-product-list .optical-product:nth-child(4n) {
         margin-right: 0; }
-      .optical-content ul li .img-box {
-        width: 255px;
+      @media (max-width: 992px) {
+        .optical-content .optical-product-list .optical-product {
+          width: 330px;
+          margin-right: 0; }
+          .optical-content .optical-product-list .optical-product:nth-child(2n) {
+            margin-left: 30px; } }
+      .optical-content .optical-product-list .optical-product .img-box {
         height: 164px;
         overflow: hidden;
         background-size: cover;
         background-position: center center;
         cursor: pointer; }
-        .optical-content ul li .img-box:hover {
+        .optical-content .optical-product-list .optical-product .img-box:hover {
           -webkit-box-shadow: 0px 2px 6px #00000029;
                   box-shadow: 0px 2px 6px #00000029; }
-      .optical-content ul li .product-info {
+      .optical-content .optical-product-list .optical-product .product-info {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -663,60 +677,22 @@ html {
                 justify-content: space-between;
         font-size: 24px;
         line-height: 36px; }
-        .optical-content ul li .product-info h3 {
+        .optical-content .optical-product-list .optical-product .product-info h3 {
           color: #AA0601;
           font-weight: bold; }
-      .optical-content ul li .color {
+      .optical-content .optical-product-list .optical-product .color {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex; }
-        .optical-content ul li .color .color-box {
+        .optical-content .optical-product-list .optical-product .color .color-box {
           width: 24px;
           height: 24px;
           border-radius: 4px;
           margin-right: 8px; }
-        .optical-content ul li .color .color-dark {
+        .optical-content .optical-product-list .optical-product .color .color-dark {
           background-color: #5F3E2D; }
-        .optical-content ul li .color .color-light {
+        .optical-content .optical-product-list .optical-product .color .color-light {
           background-color: #B75929; }
-
-.product-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0; }
-  .product-nav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    .product-nav ul li {
-      border-left: 1px solid #DCDCDC;
-      border-right: 1px solid #DCDCDC;
-      border-bottom: 8px solid transparent; }
-      .product-nav ul li:hover {
-        border-bottom: 8px solid #AA0601; }
-      .product-nav ul li a {
-        padding: 27px 92px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        color: #000;
-        font-weight: bold;
-        font-size: 32px;
-        text-decoration: none; }
-        .product-nav ul li a img {
-          width: 44px;
-          height: 44px;
-          margin-right: 10px; }
 
 .product-banner {
   display: -webkit-box;
