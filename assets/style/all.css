@@ -171,6 +171,9 @@ html {
   border-left: 8px solid #9F1213;
   margin-top: 40px;
   margin-bottom: 60px; }
+  @media (max-width: 992px) {
+    .blog-title {
+      margin-left: 39px; } }
 
 .blog-nav {
   background: #650300; }
@@ -185,6 +188,9 @@ html {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: 12px; }
+    @media (max-width: 992px) {
+      .blog-nav .container {
+        padding: 16px 39px; } }
     .blog-nav .container .blog-menu {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -807,7 +813,10 @@ html {
   padding: 0; }
   @media (max-width: 992px) {
     .store-list {
-      padding: 0 39px; } }
+      padding: 0 39px;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
   .store-list .border {
     border: 1px solid #00000020; }
   .store-list li {
@@ -822,7 +831,7 @@ html {
       background-position: center center; }
     @media (max-width: 992px) {
       .store-list li {
-        max-width: 330px; }
+        max-width: 420px; }
         .store-list li:nth-child(3n) {
           margin-right: 30px; }
         .store-list li:nth-child(2n) {
@@ -864,9 +873,7 @@ html {
       transition: all .3s; }
       @media (max-width: 992px) {
         .store-list li a {
-          width: 330px;
-          font-size: 14px;
-          line-height: 21px; } }
+          width: 420px; } }
       .store-list li a:hover {
         background-color: #650300; }
 
@@ -932,10 +939,16 @@ html {
   line-height: 63px;
   margin-bottom: 36px;
   padding: 0; }
+  @media (max-width: 992px) {
+    .question-title {
+      margin-left: 39px; } }
 
 .question-list {
   padding: 0;
   margin-bottom: 160px; }
+  @media (max-width: 992px) {
+    .question-list {
+      margin-left: 39px; } }
   .question-list li {
     margin-bottom: 32px; }
     .question-list li h4 {
@@ -961,20 +974,32 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 0; }
+  @media (max-width: 992px) {
+    .article-list {
+      margin-left: 39px; } }
   .article-list .article {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 60px; }
+    @media (max-width: 992px) {
+      .article-list .article {
+        margin-bottom: 24px; } }
     .article-list .article .img-box {
       width: 635px;
       height: 400px;
       background-size: cover;
       background-position: center center;
       margin-right: 30px; }
+      @media (max-width: 992px) {
+        .article-list .article .img-box {
+          width: 46%; } }
     .article-list .article .article-info {
       width: 445px;
       position: relative; }
+      @media (max-width: 992px) {
+        .article-list .article .article-info {
+          width: 46%; } }
       .article-list .article .article-info .df-c {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1030,6 +1055,9 @@ html {
   display: -ms-flexbox;
   display: flex;
   padding: 8px 0; }
+  @media (max-width: 992px) {
+    .breadcrumb {
+      margin-left: 39px; } }
   .breadcrumb li {
     margin-right: 5px; }
     .breadcrumb li:after {
@@ -1046,6 +1074,9 @@ html {
   display: -ms-flexbox;
   display: flex;
   padding: 0; }
+  @media (max-width: 992px) {
+    .tags {
+      margin-left: 39px; } }
 
 .tag a {
   font-size: 24px;
@@ -1062,10 +1093,16 @@ html {
   display: -ms-flexbox;
   display: flex;
   padding: 0; }
+  @media (max-width: 992px) {
+    .blog-content {
+      margin-left: 39px; } }
   .blog-content .article-content {
-    width: 825px;
+    max-width: 825px;
     padding: 0;
     margin-right: 30px; }
+    @media (max-width: 992px) {
+      .blog-content .article-content {
+        max-width: 650px; } }
     .blog-content .article-content .article-title h2 {
       font-size: 48px;
       line-height: 95px; }
