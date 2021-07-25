@@ -2,6 +2,10 @@
     display: flex;
     padding: 8px 0;
 
+    @include pad-lg(){
+        margin-left: 39px;
+    }
+
     li{
         margin-right: 5px;
 
@@ -24,6 +28,10 @@
 .tags{
     display: flex;
     padding: 0;
+
+    @include pad-lg(){
+        margin-left: 39px;
+    }
 }
 
 .tag{
@@ -45,10 +53,18 @@
     display: flex;
     padding: 0;
 
+    @include pad-lg(){
+        margin-left: 39px;
+    }
+
     .article-content{
-        width: 825px;
+        max-width: 825px;
         padding: 0;
         margin-right: 30px;
+
+        @include pad-lg(){
+            max-width: 650px;
+        }
     
         .article-title{
     

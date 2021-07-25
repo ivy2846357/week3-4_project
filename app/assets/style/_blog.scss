@@ -4,20 +4,36 @@
     justify-content: center;
     padding-top: 0;
 
+    @include pad-lg(){
+        margin-left: 39px;
+    }
+
     .article{
         display: flex;
         margin-bottom: 60px;
+
+        @include pad-lg(){
+            margin-bottom: 24px;
+        }
         
         .img-box{
             width: 635px;
             height: 400px;
             @include bg-cover;
             margin-right: 30px;
+
+            @include pad-lg(){
+                width: 46%;
+            }
         }
 
         .article-info{
             width: 445px;
             position: relative;
+
+            @include pad-lg(){
+                width: 46%;
+            }
 
             .df-c{
                 display: flex;

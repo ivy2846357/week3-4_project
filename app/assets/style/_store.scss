@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
 
-    @include pad(){
+    @include pad-lg(){
         padding: 0 39px;
         margin-bottom: 24px;  
     }
@@ -24,8 +24,9 @@
     flex-wrap: wrap;
     padding: 0;
 
-    @include pad(){
-        padding: 0 39px;  
+    @include pad-lg(){
+        padding: 0 39px;
+        justify-content: space-between;  
     }
 
     .border{
@@ -46,8 +47,8 @@
             @include bg-cover;
         }
 
-        @include pad(){
-            max-width: 330px;
+        @include pad-lg(){
+            max-width: 420px;
 
             &:nth-child(3n){
                 margin-right: 30px;
@@ -100,10 +101,8 @@
             text-align: center;
             @include transition;
 
-            @include pad(){
-                width: 330px; 
-                font-size: 14px;
-                line-height: 21px;
+            @include pad-lg(){
+                width: 420px; 
             }
 
             &:hover{

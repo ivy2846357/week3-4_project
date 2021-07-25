@@ -39,7 +39,7 @@
     background-color: $bg-red;
     padding: 44px 0 39px 0;
 
-    @include pad(){
+    @include pad-lg(){
         padding: 38px 48px;
     }
 

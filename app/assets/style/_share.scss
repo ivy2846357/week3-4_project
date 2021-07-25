@@ -53,7 +53,7 @@ html{
                 font-size: 32px;
                 text-decoration: none;
 
-                @include pad(){
+                @include pad-lg(){
                     padding: 14px 46px;       
                 }
     
@@ -88,7 +88,7 @@ html{
     margin-top: 96px;
     margin-bottom: 160px;
 
-    @include pad(){
+    @include pad-lg(){
         margin-top: 65px;
         margin-bottom: 96px;
     }
@@ -130,7 +130,7 @@ html{
     margin-bottom: 60px;
     line-height: 80px;
 
-    @include pad(){
+    @include pad-lg(){
         margin-left: 39px;   
     }
 }
@@ -142,6 +142,10 @@ html{
     border-left: 8px solid #9F1213;
     margin-top: 40px;
     margin-bottom: 60px;
+
+    @include pad-lg(){
+        margin-left: 39px;   
+    }
 }
 
 .blog-nav{
@@ -152,6 +156,10 @@ html{
         align-items: center;
         justify-content: space-between;
         padding: 12px;
+
+        @include pad-lg(){
+            padding: 16px 39px;
+        }
 
             .blog-menu{
                 display: flex;

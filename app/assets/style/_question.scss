@@ -3,11 +3,19 @@
     line-height: 63px;
     margin-bottom: 36px;
     padding: 0;
+
+    @include pad-lg(){
+        margin-left: 39px;
+    }
 }
 
 .question-list{
     padding: 0;
     margin-bottom: 160px;
+
+    @include pad-lg(){
+        margin-left: 39px;
+    }
 
     li{
         margin-bottom: 32px;

@@ -10,7 +10,7 @@
         text-align: right;
         margin-left: 939px;
 
-        @include pad(){
+        @include pad-lg(){
             margin-left: 297.5px;
         }
 
@@ -45,7 +45,7 @@
             align-items: center;
             margin: 0 15px;
 
-            @include pad(){
+            @include pad-lg(){
                 width: 45%;
                 padding: 34px 53px;
             }
@@ -80,7 +80,7 @@
             .reserve{
                 flex-direction: row-reverse;
 
-                @include pad(){
+                @include pad-lg(){
                     flex-direction: row;
                 }
             }
@@ -94,7 +94,7 @@
                 img{
                     width: 635px;
 
-                    @include pad(){
+                    @include pad-lg(){
                         width: 390px;
                     }
                 }
@@ -109,7 +109,7 @@
                     display: flex;
                     align-items: center;
 
-                    @include pad(){
+                    @include pad-lg(){
                         width: 250px;
                         font-size: 28px;
                     }
@@ -130,7 +130,7 @@
     @include bg-cover;
     padding-bottom: 80px;
 
-    @include pad(){
+    @include pad-lg(){
         padding-bottom: 56px;        
     }
 
@@ -151,7 +151,7 @@
             background-blend-mode: lighten;
             @include transition;
 
-            @include pad(){
+            @include pad-lg(){
                 width: 330px;
                 height: 278px;           
             }
@@ -165,7 +165,7 @@
                 color: $bg-red;
                 font-weight: bold;
 
-                @include pad(){
+                @include pad-lg(){
                     font-size: 32px;       
                 }
             }
@@ -192,7 +192,7 @@
 .customer-recommend{
     padding-bottom: 80px;
 
-    @include pad(){
+    @include pad-lg(){
         padding-bottom: 56px;
     }
 
@@ -200,7 +200,7 @@
         display: flex;
         justify-content: center;
         
-        @include pad(){
+        @include pad-lg(){
             flex-wrap: wrap;
         }
 
@@ -211,7 +211,7 @@
             box-shadow: 0px 2px 6px #00000029;
             @include transition;
 
-            @include pad(){
+            @include pad-lg(){
                 width: 45%; 
                 margin-bottom: 32px;          
             }
@@ -233,7 +233,7 @@
                 flex-direction: column;
                 justify-content: space-between;
 
-                @include pad(){
+                @include pad-lg(){
                     padding: 24px;
                 }
 
@@ -274,7 +274,7 @@
     width: 730px;
     padding: 60px 0 90px 0;
 
-    @include pad(){
+    @include pad-lg(){
         padding: 40px 159px;
     }
 
