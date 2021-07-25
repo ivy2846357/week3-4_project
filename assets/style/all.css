@@ -158,7 +158,11 @@ html {
   padding: 16px;
   border-left: 8px solid #9F1213;
   margin-top: 96px;
-  margin-bottom: 60px; }
+  margin-bottom: 60px;
+  line-height: 80px; }
+  @media (max-width: 992px) {
+    .store-title {
+      margin-left: 39px; } }
 
 .blog-title {
   font-size: 48px;
@@ -782,6 +786,10 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media (max-width: 992px) {
+    .place-form {
+      padding: 0 39px;
+      margin-bottom: 24px; } }
   .place-form label {
     font-size: 24px;
     margin-right: 20px; }
@@ -797,6 +805,9 @@ html {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 0; }
+  @media (max-width: 992px) {
+    .store-list {
+      padding: 0 39px; } }
   .store-list .border {
     border: 1px solid #00000020; }
   .store-list li {
@@ -809,6 +820,13 @@ html {
       height: 224px;
       background-size: cover;
       background-position: center center; }
+    @media (max-width: 992px) {
+      .store-list li {
+        max-width: 330px; }
+        .store-list li:nth-child(3n) {
+          margin-right: 30px; }
+        .store-list li:nth-child(2n) {
+          margin-right: 0px; } }
     .store-list li h2 {
       font-size: 24px;
       color: #212529;
@@ -840,9 +858,15 @@ html {
       font-size: 19px;
       line-height: 27px;
       text-decoration: none;
+      text-align: center;
       -webkit-transition: all .3s;
       -o-transition: all .3s;
       transition: all .3s; }
+      @media (max-width: 992px) {
+        .store-list li a {
+          width: 330px;
+          font-size: 14px;
+          line-height: 21px; } }
       .store-list li a:hover {
         background-color: #650300; }
 
