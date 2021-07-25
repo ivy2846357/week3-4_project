@@ -1,3 +1,4 @@
+// 文章列表
 .article-list{
     display: flex;
     flex-direction: column;
@@ -8,6 +9,7 @@
         margin-left: 39px;
     }
 
+    // 文章內容
     .article{
         display: flex;
         margin-bottom: 60px;
@@ -16,6 +18,7 @@
             margin-bottom: 24px;
         }
         
+        // 瀏覽圖
         .img-box{
             width: 635px;
             height: 400px;
@@ -27,6 +30,7 @@
             }
         }
 
+        // 文章簡介
         .article-info{
             width: 445px;
             position: relative;
@@ -35,6 +39,7 @@
                 width: 46%;
             }
 
+            // 日期/副標題設定
             .df-c{
                 display: flex;
                 align-items: center;
@@ -42,12 +47,14 @@
                 margin-bottom: 24px;
             }
 
+            // 文章標題
             h2{
                 font-size: 32px;
                 line-height: 63px;
                 color: $word-color;
             }
 
+            // 文章副標題
             h3{
                 display: flex;
                 justify-content: space-between;
@@ -56,18 +63,21 @@
                 line-height: 30px;
             }
 
+            // 文章日期
             h4{
                 font-size: 16px;
                 line-height: 24px;
                 color: rgba(0, 0, 0, .7);
             }
 
+            // 內文簡介
             p{
                 font-size: 20px;
                 line-height: 30px;
                 color: #555555;
             }
 
+            // MORE按鈕
             a{
                 position: absolute;
                 right: 0;

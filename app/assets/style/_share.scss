@@ -1,22 +1,35 @@
+//顏色樣式
 $bg-red: #AA0601;
 $bg-pink: rgba(214, 165, 164, 0.051);
 $word-white-color: #FFFFFF;
 $word-color: #650300;
 $hover-color: #F9DBBD;
 
-
+//字體
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
 html{
     font-family: 'Open Sans', sans-serif;
 }
 
+//圖片置中
+@mixin bg-cover{
+    background-size: cover;
+    background-position: center center;
+}
+
+//動畫效果
+@mixin transition{
+    transition: all .3s;
+}
+
+//預設網頁大小
 .container{
     max-width: 1110px;
     margin: 0 auto;
     padding: 60px 0;
 }
 
+//首頁標題
 .title{
     color: $word-color;
     font-size: 48px;
@@ -26,6 +39,7 @@ html{
     font-weight: bold;
 }
 
+//商品頁副導覽列
 .product-nav{
     display: flex;
     justify-content: center;
@@ -67,21 +81,35 @@ html{
     }
 }
 
+//商品頁標題
 .product-title{
     font-size: 42px;
     margin-top: 80px;
     line-height: 63px;
 }
+//商品頁副標題
 .product-sub-title{
     font-size: 32px;
     line-height: 48px;
     margin-bottom: 40px;
 }
-
+//商品頁導覽列點擊樣式
 .product-nav-active{
     border-bottom: 8px solid $bg-red !important;
 }
 
+//商品頁banner樣式
+.product-banner{
+    display: flex;
+    
+    li{
+        width: 960px;
+        height: 304px;
+        @include bg-cover;
+    }
+}
+
+//page頁數
 .product-page{
     display: flex;
     justify-content: center;
@@ -121,6 +149,7 @@ html{
     }
 }
 
+//門市據點.常見問題標題
 .store-title{
     font-size: 48px;
     font-weight: bold;
@@ -135,6 +164,7 @@ html{
     }
 }
 
+//部落格標題
 .blog-title{
     font-size: 48px;
     font-weight: bold;
@@ -148,6 +178,7 @@ html{
     }
 }
 
+//部落格副導覽列
 .blog-nav{
     background: #650300;
 
@@ -204,13 +235,4 @@ html{
         
         }
 
-}
-
-@mixin bg-cover{
-    background-size: cover;
-    background-position: center center;
-}
-
-@mixin transition{
-    transition: all .3s;
 }

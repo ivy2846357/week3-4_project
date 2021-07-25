@@ -1,3 +1,4 @@
+//分店選擇
 .shop-form{
     display: flex;
     align-items: center;
@@ -18,6 +19,7 @@
 
 }
 
+//分店資訊
 .shop-info{
     display: flex;
     flex-wrap: wrap;
@@ -46,6 +48,7 @@
             margin-right: 0px;
         }
 
+        //分店預覽圖
         .img-box{
             height: 224px;
             @include bg-cover;
@@ -57,6 +60,7 @@
             }
         }
 
+        //分店資訊(名稱/時間/地點/電話)
         .shop-list{
             display: flex;
             flex-direction: column; 
@@ -64,13 +68,15 @@
             @include pad-lg(){
                 height: 230px;
             }
-            
+
+            //分店名稱
             h2{
                 font-size: 24px;
                 color: #212529;
                 padding: 12px 24px;
             }
     
+            //分店詳細資訊
             .store-info{
                 padding: 22px 27px;
     
@@ -97,9 +103,15 @@
             }
         }
 
+        //Google地圖
         iframe{
-            width: 100%;
-            height: 600px;
+            width: 635px;
+            height: 452px;
+
+            @include pad-lg(){
+                width: 100%;
+                height: 600px;
+            }
         }
     }
 }

@@ -1,13 +1,4 @@
-.product-banner{
-    display: flex;
-    
-    li{
-        width: 960px;
-        height: 304px;
-        @include bg-cover;
-    }
-}
-
+//optical商品列表
 .optical-content{
     display: flex;
     flex-direction: column;
@@ -37,6 +28,7 @@
                }
             }
 
+            //商品預覽圖
             .img-box{
                 height: 164px;
                 overflow: hidden;
@@ -48,6 +40,7 @@
                 }
             }
 
+            //商品資訊
             .product-info{
                 display: flex;
                 justify-content: space-between;
@@ -60,6 +53,7 @@
                 }
             }
 
+            //顏色選擇
             .color{
                 display: flex;
 

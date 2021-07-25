@@ -1,3 +1,4 @@
+//地區選擇
 .place-form{
     display: flex;
     align-items: center;
@@ -19,6 +20,7 @@
 
 }
 
+//門市據點資訊
 .store-list{
     display: flex;
     flex-wrap: wrap;
@@ -42,6 +44,7 @@
             margin-right: 0px;
         }
 
+        //門市預覽圖
         .img-box{
             height: 224px;
             @include bg-cover;
@@ -59,12 +62,14 @@
             }
         }
 
+        //門市名稱
         h2{
             font-size: 24px;
             color: #212529;
             padding: 12px 24px;
         }
 
+        //門市資訊(時間/地點/電話)
         ul{
             padding: 22px 27px;
 
@@ -86,6 +91,7 @@
             }
         }
 
+        //詳細資訊按鈕
         a{
             width: 350px;
             padding: 20px 137px;

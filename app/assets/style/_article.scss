@@ -1,3 +1,4 @@
+// 選單
 .breadcrumb{
     display: flex;
     padding: 8px 0;
@@ -25,6 +26,7 @@
     }
 }
 
+// 當頁tag標籤
 .tags{
     display: flex;
     padding: 0;
@@ -34,6 +36,7 @@
     }
 }
 
+// tag樣式
 .tag{
     a{
         font-size: 24px;
@@ -49,6 +52,7 @@
     }
 }
 
+// 文章內容
 .blog-content{
     display: flex;
     padding: 0;
@@ -67,12 +71,14 @@
         }
     
         .article-title{
-    
+            
+            // 文章標題
             h2{
                 font-size: 48px;
                 line-height: 95px;
             }
     
+            // 文章副標題
             h3{
                 font-size: 28px;
                 line-height: 42px;
@@ -80,12 +86,14 @@
             }
         }
 
+        // 內頁圖片
         .img-box{
             height: 539px;
             @include bg-cover;
             margin-bottom: 24px;
         }
 
+        // 介紹文字
         p{
             font-size: 20px;
             line-height: 30px;
@@ -93,6 +101,7 @@
             margin-bottom: 40px;
         }
 
+        // 分享連結
         .share-link{
             display: flex;
             align-items: center;
@@ -114,37 +123,40 @@
             }
         }
 
+        // 上一篇/下一篇連結
         .page-link{
             padding-top: 24px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-bottom: 160px;
-        }
 
-        li{
-            a{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                text-decoration: none;
-                color: #000;
-
-                &:hover{
-                    color: $bg-red;
-                }
-
-                h3{
-                    padding: 0 12px;
+            li{
+                a{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-decoration: none;
+                    color: #000;
+    
+                    &:hover{
+                        color: $bg-red;
+                    }
+    
+                    h3{
+                        padding: 0 12px;
+                    }
                 }
             }
         }
 
+        // 下一篇連結反向排列
         .reserve{
             flex-direction: row-reverse;
         }
     }
 
+    // 右側tag選單
     .tag-list{
         width: 150px;
         

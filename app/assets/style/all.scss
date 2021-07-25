@@ -1,8 +1,11 @@
-//CSS reset
+//RWD斷點
 @import "_grid.scss";
+//CSS reset
 @import "_reset.scss";
+//共用CSS樣式
 @import "_share.scss";
 
+//各網頁樣式
 @import "_layout.scss";
 @import "_index.scss";
 @import "_product-optical.scss";

@@ -1,3 +1,4 @@
+//常見問題副標題
 .question-title{
     font-size: 32px;
     line-height: 63px;
@@ -9,6 +10,7 @@
     }
 }
 
+//常見問題內容
 .question-list{
     padding: 0;
     margin-bottom: 160px;
@@ -20,6 +22,7 @@
     li{
         margin-bottom: 32px;
 
+        //問題
         h4{
             font-size: 20px;
             line-height: 23px;
@@ -27,6 +30,7 @@
             margin-bottom: 16px;
         }
 
+        //回答
         p{
             width: 920px;
             font-size: 16px;

@@ -1,13 +1,14 @@
 ---
-title: 首頁
+title: 門市資訊
 layout: ./app/layout.ejs
 engine: ejs
 current: shop-info
 ---
 
+<!-- 門市據點標題 -->
 <h2 class="store-title container">門市據點</h2>
 
-<!-- 地區選擇 -->
+<!-- 分店選擇 -->
 <form action="shop-info.html" class="container shop-form">
     <label for="place">選擇分店</label>
     <select name="place" id="place">
@@ -17,6 +18,7 @@ current: shop-info
     </select>
 </form>
 
+<!-- 分店資訊 -->
 <ul class="container shop-info">
     <li>
         <div class="img-box" style="background-image: url(assets/images/locate1.jpeg);"></div>
