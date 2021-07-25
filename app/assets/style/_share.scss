@@ -128,6 +128,11 @@ html{
     border-left: 8px solid #9F1213;
     margin-top: 96px;
     margin-bottom: 60px;
+    line-height: 80px;
+
+    @include pad(){
+        margin-left: 39px;   
+    }
 }
 
 .blog-title{
