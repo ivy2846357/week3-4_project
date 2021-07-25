@@ -12,12 +12,21 @@
         padding: 8px 19px;
     }
 
+    @include pad-lg(){
+        margin-left: 39px;
+    }
+
 }
 
 .shop-info{
     display: flex;
     flex-wrap: wrap;
     padding: 0;
+
+    @include pad-lg(){
+        margin-left: 39px;
+        flex-direction: column;
+    }
 
     .border{
         border: 1px solid #00000020;
@@ -28,6 +37,11 @@
         margin-right: 30px;
         margin-bottom: 32px;
 
+        @include pad-lg(){
+            display: flex;
+            max-width: 800px;
+        }
+
         &:nth-child(3n){
             margin-right: 0px;
         }
@@ -35,38 +49,57 @@
         .img-box{
             height: 224px;
             @include bg-cover;
+
+            @include pad-lg(){
+                width: 50%;
+                margin-right: 20px;
+                height: 230px;
+            }
         }
 
-        h2{
-            font-size: 24px;
-            color: #212529;
-            padding: 12px 24px;
-        }
+        .shop-list{
+            display: flex;
+            flex-direction: column; 
 
-        ul{
-            padding: 22px 27px;
+            @include pad-lg(){
+                height: 230px;
+            }
+            
+            h2{
+                font-size: 24px;
+                color: #212529;
+                padding: 12px 24px;
+            }
+    
+            .store-info{
+                padding: 22px 27px;
+    
+                li{
+                    display: flex;
+                    margin-bottom: 8px;
+                    font-size: 20px;
+                    line-height: 30px;
 
-            li{
-                display: flex;
-                margin-bottom: 8px;
-                font-size: 20px;
-                line-height: 30px;
-
-                &:nth-last-child(1){
-                    margin-bottom: 0px;
-                }
-
-                img{
-                    width: 18px;
-                    height: 18px;
-                    margin-right: 12.04px;
-                }
-
-                iframe{
-                    width: 635px;
-                    height: 422px;
+                    @include pad-lg(){
+                        font-size: 18px;
+                    }
+    
+                    &:nth-last-child(1){
+                        margin-bottom: 0px;
+                    }
+    
+                    img{
+                        width: 18px;
+                        height: 18px;
+                        margin-right: 12.04px;
+                    }
                 }
             }
+        }
+
+        iframe{
+            width: 100%;
+            height: 600px;
         }
     }
 }
