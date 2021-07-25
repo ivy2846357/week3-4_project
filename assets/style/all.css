@@ -716,27 +716,40 @@ html {
       -ms-flex-align: center;
           align-items: center;
   padding: 0; }
-  .sunglasses-content ul {
+  .sunglasses-content .sunglasses-product-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
-    .sunglasses-content ul li {
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .sunglasses-content .sunglasses-product-list .sunglasses-product {
+      width: 255px;
       margin-right: 30px;
       margin-bottom: 104px; }
-      .sunglasses-content ul li:nth-child(3n) {
+      .sunglasses-content .sunglasses-product-list .sunglasses-product:nth-child(3n) {
         margin-right: 0; }
-      .sunglasses-content ul li .img-box {
-        width: 350px;
+      @media (max-width: 992px) {
+        .sunglasses-content .sunglasses-product-list .sunglasses-product {
+          width: 330px;
+          margin-right: 0; }
+          .sunglasses-content .sunglasses-product-list .sunglasses-product:nth-child(2n) {
+            margin-left: 30px; } }
+      .sunglasses-content .sunglasses-product-list .sunglasses-product .img-box {
         height: 224px;
+        overflow: hidden;
         background-size: cover;
         background-position: center center;
         cursor: pointer; }
-        .sunglasses-content ul li .img-box:hover {
+        @media (max-width: 992px) {
+          .sunglasses-content .sunglasses-product-list .sunglasses-product .img-box {
+            height: 164px; } }
+        .sunglasses-content .sunglasses-product-list .sunglasses-product .img-box:hover {
           -webkit-box-shadow: 0px 2px 6px #00000029;
                   box-shadow: 0px 2px 6px #00000029; }
-      .sunglasses-content ul li .product-info {
+      .sunglasses-content .sunglasses-product-list .sunglasses-product .product-info {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -745,21 +758,21 @@ html {
                 justify-content: space-between;
         font-size: 24px;
         line-height: 36px; }
-        .sunglasses-content ul li .product-info h3 {
+        .sunglasses-content .sunglasses-product-list .sunglasses-product .product-info h3 {
           color: #AA0601;
           font-weight: bold; }
-      .sunglasses-content ul li .color {
+      .sunglasses-content .sunglasses-product-list .sunglasses-product .color {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex; }
-        .sunglasses-content ul li .color .color-box {
+        .sunglasses-content .sunglasses-product-list .sunglasses-product .color .color-box {
           width: 24px;
           height: 24px;
           border-radius: 4px;
           margin-right: 8px; }
-        .sunglasses-content ul li .color .color-dark {
+        .sunglasses-content .sunglasses-product-list .sunglasses-product .color .color-dark {
           background-color: #5F3E2D; }
-        .sunglasses-content ul li .color .color-light {
+        .sunglasses-content .sunglasses-product-list .sunglasses-product .color .color-light {
           background-color: #B75929; }
 
 .place-form {
