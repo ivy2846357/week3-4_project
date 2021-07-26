@@ -10,23 +10,56 @@
         padding: 38px 39px;
     }
 
+    @include phone(){
+        flex-direction: column;
+        padding: 0;
+    }
+
         a{
+
+            @include phone(){
+                padding: 8px 0;
+            }
+
             img{
                 width: 80px;
                 height: 48.57px;
+
+                @include phone(){
+                    width: 48px;
+                    height: 29.14px;
+                }
             }
         }
 
     ul{
         display: flex;
 
+        @include phone(){
+            flex-wrap: wrap; 
+            justify-content: center;
+            align-items: center;          
+        }
+
         li{
+
+            @include phone(){
+                width: 186px;
+                padding: 8px 52px;
+                border: 1px solid #FFF;
+                text-align: center;
+            }
+
             a{
                 font-size: 20px;
                 line-height: 30px;
                 text-decoration: none;
                 padding: 0 32px;
                 color: $word-white-color;
+
+                @include phone(){
+                    padding: 0;
+                }
 
                 &:hover{
                     color: $hover-color;
@@ -47,100 +80,140 @@
         padding: 38px 48px;
     }
 
+    @include phone(){
+        padding: 26px 15px;
+    }
+
     .container{
         display: flex;
         flex-direction: column;
 
-        .link{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            //表尾導覽列
-            .footer-nav{
-                display: flex;
-
-                li{
-                    a{
-                        color: $word-white-color;
-                        text-decoration: none;
-                        margin-right: 40px;
-
-                        @include pad-md(){
-                            font-size: 16px;
-                            line-height: 24px;
-                        }
-
-                        &:hover{
-                            color: $hover-color;
-                            font-weight: bold;
-                        }
-                    }
-                }
-            }
-
-            //社群連結
-            .social-icon{
-                display: flex;
-
-                li{
-                    margin-left: 32px;
-                    border-radius: 10px;
-
-                    img{
-                        @include pad-md(){
-                            width: 24px;
-                        }
-
-                        &:hover{
-                            background-color: rgba(0, 0, 0, .2);
-                            background-blend-mode: screen;
-                            border-radius: 10px;
-                        }
-                    }
-                }
-            }
+        @include phone(){
+            padding: 0;
         }
 
-        //聯絡方式
-        .contact{
-            padding: 36px 0;
-            border-bottom: 1px solid $word-white-color;
+        .contact-info{
 
-            li{
+            @include phone(){
                 display: flex;
-                align-items: center;
-
-                img{
-                    width: 36px;
-                    height: 36px;
-                    margin-right: 22px;
-
-                    @include pad-md(){
-                        width: 18px;
-                        height: 18px;
-                        margin-right: 11px;
-                    }
-                }
-
-                a{
-                    font-size: 36px;
-                    line-height: 54px;
-                    color: $word-white-color;
-                    text-decoration: none;
-
-                    @include pad-md(){
-                        font-size: 20px;
-                        line-height: 30px;
-                    }
-
-                    &:hover{
-                        color: $hover-color;
-                    }
-                }
-
+                flex-direction: row-reverse;
+                align-items: start;
+                border-bottom: 1px solid $word-white-color;
+                padding-bottom: 26px;
             }
 
+            .link{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+    
+                //表尾導覽列
+                .footer-nav{
+                    display: flex;
+    
+                    @include phone(){
+                        display: none;
+                    }
+    
+                    li{
+                        a{
+                            color: $word-white-color;
+                            text-decoration: none;
+                            margin-right: 40px;
+    
+                            @include pad-md(){
+                                font-size: 16px;
+                                line-height: 24px;
+                            }
+    
+                            &:hover{
+                                color: $hover-color;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+    
+                //社群連結
+                .social-icon{
+                    display: flex;
+    
+                    li{
+                        margin-left: 32px;
+                        border-radius: 10px;
+
+                        @include phone(){
+                            margin-left: 24px;
+                        }
+    
+                        img{
+                            @include pad-md(){
+                                width: 24px;
+                            }
+    
+                            &:hover{
+                                background-color: rgba(0, 0, 0, .2);
+                                background-blend-mode: screen;
+                                border-radius: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            //聯絡方式
+            .contact{
+                padding: 36px 0;
+                border-bottom: 1px solid $word-white-color;
+
+                @include phone(){
+                    padding: 0;
+                    border: 0;           
+                }
+    
+                li{
+                    display: flex;
+                    align-items: center;
+    
+                    img{
+                        width: 36px;
+                        height: 36px;
+                        margin-right: 22px;
+    
+                        @include pad-md(){
+                            width: 18px;
+                            height: 18px;
+                            margin-right: 11px;
+                        }
+
+                        @include phone(){
+                            width: 15px;
+                        }
+                    }
+    
+                    a{
+                        font-size: 36px;
+                        line-height: 54px;
+                        color: $word-white-color;
+                        text-decoration: none;
+    
+                        @include pad-md(){
+                            font-size: 20px;
+                            line-height: 30px;
+                        }
+
+                        @include phone(){
+                            font-size: 16px;
+                        }
+    
+                        &:hover{
+                            color: $hover-color;
+                        }
+                    }
+    
+                }
+    
+            }
         }
 
         //版權
@@ -149,21 +222,42 @@
             justify-content: space-between;
             padding: 39px 0;
 
+            @include phone(){
+                flex-direction: column;
+            }
+
             p{
                 font-size: 16px;
                 color: $word-white-color;
+
+                @include phone(){
+                    font-size: 14px;
+                    margin-bottom: 8px;
+                }
             }
 
             ul{
                 display: flex;
 
+                @include phone(){
+                    flex-direction: column;
+                }
+
                 li{
+
+                    @include phone(){
+                        margin-bottom: 8px;
+                    }
 
                     a{
                         text-decoration: none;
                         font-size: 14px;
                         color: $word-white-color;
                         margin-left: 48px;
+
+                        @include phone(){
+                            margin-left: 0;
+                        }
 
                         &:hover{
                             color: $hover-color;
