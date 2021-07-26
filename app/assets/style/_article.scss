@@ -24,6 +24,10 @@
             }
         }
     }
+
+    .breadcrumb-active{
+        color: $bg-red;
+    }
 }
 
 // 當頁tag標籤
@@ -45,6 +49,11 @@
         margin-right: 16px;
         font-weight: bold;
         text-decoration: none;
+
+        @include pad-md(){
+            font-size: 16px;
+            line-height: 25px;
+        }
 
         &:hover{
             color: $hover-color;
@@ -69,6 +78,10 @@
         @include pad-lg(){
             max-width: 650px;
         }
+
+        @include pad-md(){
+            max-width: 510px;
+        }
     
         .article-title{
             
@@ -76,13 +89,21 @@
             h2{
                 font-size: 48px;
                 line-height: 95px;
+
+                @include pad-md(){
+                    font-size: 32px;
+                    line-height: 30px;
+                }
             }
     
             // 文章副標題
             h3{
                 font-size: 28px;
                 line-height: 42px;
-                margin-bottom: 24px;
+
+                @include pad-md(){
+                    font-size: 16px;
+                }
             }
         }
 
@@ -91,6 +112,10 @@
             height: 539px;
             @include bg-cover;
             margin-bottom: 24px;
+
+            @include pad-md(){
+                width: 510px;
+            }
         }
 
         // 介紹文字
@@ -99,6 +124,11 @@
             line-height: 30px;
             color: rgba(0, 0, 0, .6);
             margin-bottom: 40px;
+
+            @include pad-md(){
+                font-size: 16px;
+                line-height: 24px;
+            }
         }
 
         // 分享連結
@@ -112,6 +142,11 @@
                 font-size: 20px;
                 line-height: 30px;
                 margin-right: 20px;
+
+                @include pad-md(){
+                    font-size: 16px;
+                    margin-right: 16px;
+                }
             }
 
             li{
@@ -165,8 +200,16 @@
             align-items: center;
             padding: 8px 0;
 
+            @include pad-md(){
+                padding: 0;
+            }
+
             img{
                 margin-right: 12px;
+
+                @include pad-md(){
+                    margin-right: 3px;
+                }
             }
 
             h3{
@@ -174,6 +217,11 @@
                 line-height: 42px;
                 color: $bg-red;
                 font-weight: bold;
+
+                @include pad-md(){
+                    font-size: 20px;
+                    line-height: 42px;
+                }
             }
         }
        }

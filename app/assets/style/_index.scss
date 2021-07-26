@@ -17,12 +17,22 @@
         h4{
             font-size: 36px;
             color: $word-color;
+
+            @include pad-md(){
+                font-size: 20px;
+                line-height: 30px;
+            }
         }
 
         h3{
             font-size: 64px;
             color: $word-color;
             font-weight: bold;
+
+            @include pad-md(){
+                font-size: 48px;
+                line-height: 72px;
+            }
         }
     }
 }
@@ -196,6 +206,10 @@
         padding-bottom: 56px;
     }
 
+    @include pad-md(){
+        padding: 0;
+    }
+
     ul{
         display: flex;
         justify-content: center;
@@ -267,6 +281,7 @@
 
 //聯絡我們
 .contact{
+    background-color: #AA06010D;
 
   form{
     display: flex;

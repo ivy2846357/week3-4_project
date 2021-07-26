@@ -3,20 +3,29 @@
     display: flex;
     align-items: center;
 
+    @include pad-lg(){
+        margin-left: 39px;
+    }
+
     label{
         font-size: 24px;
         margin-right: 20px;
+
+        @include pad-md(){
+            font-size: 16px;
+            line-height: 30px;
+        }
     }
     select{
         width: 324px;
         height: 45px;
         padding: 8px 19px;
-    }
 
-    @include pad-lg(){
-        margin-left: 39px;
+        @include pad-md(){
+            width: 237px;
+            padding: 10px 16px;
+        }
     }
-
 }
 
 //分店資訊
@@ -111,6 +120,7 @@
             @include pad-lg(){
                 width: 100%;
                 height: 600px;
+                margin-bottom: 96px;
             }
         }
     }
