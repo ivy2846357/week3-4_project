@@ -4,22 +4,28 @@
     height: 840px;
     display: flex;
     align-items: center;
+    position: relative;
     @include bg-cover;
 
-    @include phone(){
+    @include phone-sm(){
         height: 394px;           
     }
 
     .banner-title{
         text-align: right;
-        margin-left: 939px;
+        position: absolute;
+        left: 50%;
 
         @include pad-lg(){
-            margin-left: 297.5px;
+            left: 35%;
         }
 
-        @include phone(){
-            margin-left: 72px;       
+        @include phone-md(){
+            left: 25%;
+        }
+
+        @include phone-sm(){
+            left: 15%;    
         }
 
         h4{
@@ -31,23 +37,28 @@
                 line-height: 30px;
             }
 
-            @include phone(){
+            @include phone-sm(){
                 font-size: 16px;   
             }
         }
 
         h3{
             font-size: 64px;
+            line-height: 72px;
             color: $word-color;
             font-weight: bold;
 
             @include pad-md(){
                 font-size: 48px;
-                line-height: 72px;
             }
 
-            @include phone(){
-                font-size: 32px;   
+            @include phone-md(){
+                font-size: 34px;
+            }
+
+            @include phone-sm(){
+                font-size: 32px;
+                line-height: 35px;   
             }
         }
     }
@@ -76,14 +87,19 @@
                 padding: 34px 53px;
             }
 
-            @include phone(){
+            @include phone-md(){
                 width: 100%;
-                padding: 0 60px;
+                padding: 0 100px;
                 margin-bottom: 40px;
                 
                 &:nth-last-child(1){
                     margin-bottom: 40px;
                 }
+            }
+
+            @include phone-sm(){
+                padding: 0 20px;
+                text-align: center;
             }
 
               img{
@@ -113,7 +129,7 @@
     .container{
         ul{
 
-            @include phone(){
+            @include phone-md(){
                 padding: 0 15px;
                 margin-bottom: 40px;
             }
@@ -132,7 +148,7 @@
                 justify-content: center;
                 margin-bottom: 32px;
 
-                @include phone(){
+                @include phone-md(){
                     position: relative;
                     display: block;
                 }
@@ -144,7 +160,7 @@
                         width: 390px;
                     }
 
-                    @include phone(){
+                    @include phone-md(){
                         width: 100%;
                     }
                 }
@@ -164,7 +180,7 @@
                         font-size: 28px;
                     }
 
-                    @include phone(){
+                    @include phone-md(){
                         position: absolute;
                         justify-content: center;
                         top: 50%;
@@ -192,7 +208,7 @@
         padding-bottom: 56px;        
     }
 
-    @include phone(){
+    @include phone-md(){
          padding-bottom: 40px;   
     }
 
@@ -200,7 +216,7 @@
         display: flex;
         justify-content: center;
 
-        @include phone(){
+        @include phone-md(){
             flex-direction: column;
             align-items: center;
         }
@@ -267,7 +283,7 @@
         padding: 0;
     }
 
-    @include phone(){
+    @include phone-md(){
         padding: 0 15px;       
     }
 
@@ -279,7 +295,7 @@
             flex-wrap: wrap;
         }
 
-        @include phone(){
+        @include phone-md(){
             align-items: center;
         }
 
@@ -295,7 +311,7 @@
                 margin-bottom: 32px;          
             }
 
-            @include phone(){
+            @include phone-md(){
                 width: 100%;
                 margin-bottom: 16px;
             }
@@ -348,7 +364,7 @@
 .title-black{
     color: #000;
 
-    @include phone(){
+    @include phone-md(){
         margin-top: 30px;       
     }
 }
@@ -367,7 +383,7 @@
         padding: 40px 159px;
     }
 
-    @include phone(){
+    @include phone-md(){
         width: 345px;
         padding: 0 15px;       
     }
@@ -381,7 +397,7 @@
         line-height: 30px;
         margin-bottom: 20px;
 
-        @include phone(){
+        @include phone-md(){
             font-size: 16px;
             line-height: 24px;   
         }
@@ -391,7 +407,7 @@
         font-size: 16px;
         margin-bottom: 4px;
 
-        @include phone(){
+        @include phone-md(){
             font-size: 14px;
             line-height: 21px;
             margin-bottom: 6px;   
@@ -403,7 +419,7 @@
         background-color: $bg-pink;
         padding: 12px 16px;
 
-        @include phone(){
+        @include phone-md(){
             padding: 7px 12px;   
         }
     }
@@ -411,7 +427,7 @@
     .agree{
         margin-bottom: 40px;
 
-        @include phone(){
+        @include phone-md(){
             margin-bottom: 20px;
         }
     }
@@ -427,7 +443,7 @@
         cursor: pointer;
         @include transition;
 
-        @include phone(){
+        @include phone-md(){
             width: 165px;
             padding: 8px 54.5px;
             font-size: 14px;

@@ -10,14 +10,14 @@
         padding: 38px 39px;
     }
 
-    @include phone(){
+    @include phone-md(){
         flex-direction: column;
         padding: 0;
     }
 
         a{
 
-            @include phone(){
+            @include phone-md(){
                 padding: 8px 0;
             }
 
@@ -25,7 +25,7 @@
                 width: 80px;
                 height: 48.57px;
 
-                @include phone(){
+                @include phone-sm(){
                     width: 48px;
                     height: 29.14px;
                 }
@@ -35,7 +35,7 @@
     ul{
         display: flex;
 
-        @include phone(){
+        @include phone-md(){
             flex-wrap: wrap; 
             justify-content: center;
             align-items: center;          
@@ -43,8 +43,8 @@
 
         li{
 
-            @include phone(){
-                width: 186px;
+            @include phone-md(){
+                width: 50%;
                 padding: 8px 52px;
                 border: 1px solid #FFF;
                 text-align: center;
@@ -57,7 +57,7 @@
                 padding: 0 32px;
                 color: $word-white-color;
 
-                @include phone(){
+                @include phone-md(){
                     padding: 0;
                 }
 
@@ -80,7 +80,7 @@
         padding: 38px 48px;
     }
 
-    @include phone(){
+    @include phone-md(){
         padding: 26px 15px;
     }
 
@@ -88,18 +88,19 @@
         display: flex;
         flex-direction: column;
 
-        @include phone(){
+        @include phone-sm(){
             padding: 0;
         }
 
         .contact-info{
 
-            @include phone(){
+            @include phone-md(){
                 display: flex;
                 flex-direction: row-reverse;
                 align-items: start;
                 border-bottom: 1px solid $word-white-color;
                 padding-bottom: 26px;
+                justify-content: space-between;
             }
 
             .link{
@@ -111,7 +112,7 @@
                 .footer-nav{
                     display: flex;
     
-                    @include phone(){
+                    @include phone-md(){
                         display: none;
                     }
     
@@ -142,7 +143,7 @@
                         margin-left: 32px;
                         border-radius: 10px;
 
-                        @include phone(){
+                        @include phone-sm(){
                             margin-left: 24px;
                         }
     
@@ -166,7 +167,7 @@
                 padding: 36px 0;
                 border-bottom: 1px solid $word-white-color;
 
-                @include phone(){
+                @include phone-md(){
                     padding: 0;
                     border: 0;           
                 }
@@ -186,7 +187,7 @@
                             margin-right: 11px;
                         }
 
-                        @include phone(){
+                        @include phone-sm(){
                             width: 15px;
                         }
                     }
@@ -202,7 +203,7 @@
                             line-height: 30px;
                         }
 
-                        @include phone(){
+                        @include phone-sm(){
                             font-size: 16px;
                         }
     
@@ -222,7 +223,7 @@
             justify-content: space-between;
             padding: 39px 0;
 
-            @include phone(){
+            @include phone-md(){
                 flex-direction: column;
             }
 
@@ -230,7 +231,7 @@
                 font-size: 16px;
                 color: $word-white-color;
 
-                @include phone(){
+                @include phone-md(){
                     font-size: 14px;
                     margin-bottom: 8px;
                 }
@@ -239,13 +240,13 @@
             ul{
                 display: flex;
 
-                @include phone(){
+                @include phone-md(){
                     flex-direction: column;
                 }
 
                 li{
 
-                    @include phone(){
+                    @include phone-md(){
                         margin-bottom: 8px;
                     }
 
@@ -255,7 +256,7 @@
                         color: $word-white-color;
                         margin-left: 48px;
 
-                        @include phone(){
+                        @include phone-md(){
                             margin-left: 0;
                         }
 

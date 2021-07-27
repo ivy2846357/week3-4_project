@@ -7,13 +7,19 @@
 }
 
 @mixin pad-md(){
-    @media (max-width: 767px){
+    @media (max-width: 768px){
         @content;
     }
 }
 
 //手機格式
-@mixin phone{
+@mixin phone-md{
+    @media (max-width: 576px){
+        @content;
+    }
+}
+
+@mixin phone-sm{
     @media (max-width: 376px){
         @content;
     }
