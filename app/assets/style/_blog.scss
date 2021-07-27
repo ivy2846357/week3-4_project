@@ -9,6 +9,11 @@
         margin-left: 39px;
     }
 
+    @include phone-md(){
+        margin-left: 0;
+        padding: 0 15px;
+    }
+
     // 文章內容
     .article{
         display: flex;
@@ -16,6 +21,14 @@
 
         @include pad-lg(){
             margin-bottom: 24px;
+        }
+
+        @include phone-md(){
+            flex-direction: column;
+        }
+
+        @include phone-md(){
+            margin-bottom: 0px;
         }
         
         // 瀏覽圖
@@ -32,6 +45,11 @@
             @include pad-md(){
                 height: 270px;   
             }
+
+            @include phone-md(){
+                width: 100%;
+                margin-bottom: 8px;
+            }
         }
 
         // 文章簡介
@@ -41,6 +59,10 @@
 
             @include pad-lg(){
                 width: 46%;
+            }
+
+            @include phone-md(){
+                width: 100%;
             }
 
             // 日期/副標題設定
@@ -64,6 +86,10 @@
                 @include pad-lg(){
                     font-size: 20px;
                     line-height: 24px;
+                }
+
+                @include phone-md(){
+                    font-size: 16px;
                 }
             }
 
@@ -124,8 +150,19 @@
                     line-height: 30px;
                     color: #555555;
                 }
+
+                @include phone-md(){
+                    right: 20px;
+                    bottom: 120px;
+                    color: $bg-red;
+                    font-size: 30px;
+                }
             }
         }
         
     }
+}
+
+.blog-nav-dn, .article-dn{
+    display: none;
 }

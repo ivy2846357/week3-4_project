@@ -72,8 +72,16 @@ html{
             border-right: 1px solid #DCDCDC;
             border-bottom: 8px solid transparent;
 
+            @include phone-md(){
+                border-bottom: 4px solid transparent;
+            }
+
             &:hover{
                 border-bottom: 8px solid $bg-red;
+
+                @include phone-md(){
+                    border-bottom: 4px solid $bg-red;
+                }
             }
 
             a{
@@ -91,11 +99,21 @@ html{
                     font-size: 24px;
                     line-height: 50px;       
                 }
+
+                @include phone-md(){
+                    font-size: 14px;
+                    line-height: 14px;
+                }
     
                 img{
                     width: 44px;
                     height: 44px;
                     margin-right: 10px;
+
+                    @include phone-md(){
+                        width: 14px;
+                        height: 14px;
+                    }
                 }
             }
         }
@@ -107,6 +125,10 @@ html{
     font-size: 42px;
     margin-top: 80px;
     line-height: 63px;
+
+    @include phone-md(){
+        margin-top: 32px;               
+    }
 }
 //商品頁副標題
 .product-sub-title{
@@ -117,6 +139,10 @@ html{
 //商品頁導覽列點擊樣式
 .product-nav-active{
     border-bottom: 8px solid $bg-red !important;
+
+    @include phone-md(){
+        border-bottom: 4px solid $bg-red !important;      
+    }
 }
 
 //商品頁banner樣式
@@ -127,6 +153,11 @@ html{
         width: 960px;
         height: 304px;
         @include bg-cover;
+
+        @include phone-md(){
+            width: 100%;
+            height: 148px;
+        }
     }
 }
 
@@ -140,6 +171,11 @@ html{
     @include pad-lg(){
         margin-top: 65px;
         margin-bottom: 96px;
+    }
+
+    @include phone-md(){
+        margin-top: 40px;
+        margin-bottom: 56px;              
     }
 
     li{
@@ -183,6 +219,15 @@ html{
     @include pad-lg(){
         margin-left: 39px;   
     }
+
+    @include phone-md(){
+        font-size: 28px;
+        margin-top: 28px;
+        margin-bottom: 24px;
+        padding: 0 0 0 8px;
+        line-height: 45px;
+        margin-left: 15px;
+    }
 }
 
 //部落格標題
@@ -198,6 +243,15 @@ html{
         margin-left: 39px;
         margin-top: 32px;
         margin-bottom: 40px;   
+    }
+
+    @include phone-md(){
+        font-size: 28px;
+        margin-top: 28px;
+        margin-bottom: 24px;
+        padding: 0 0 0 8px;
+        line-height: 45px;
+        margin-left: 15px;
     }
 }
 

@@ -28,6 +28,15 @@
                 }
              }
 
+             @include phone-md(){
+                width: 90%;
+                margin-bottom: 32px;
+
+                &:nth-child(2n){
+                    margin-left: 0px;
+                }
+            }
+
              //商品預覽圖
             .img-box{
                 height: 224px;
@@ -37,6 +46,10 @@
 
                 @include pad-lg(){
                     height: 164px;
+                }
+
+                @include phone-md(){
+                    height: 330px;
                 }
 
                 &:hover{

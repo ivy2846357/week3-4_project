@@ -7,6 +7,10 @@
         margin-left: 39px;
     }
 
+    @include phone-md(){
+        margin-left: 15px;
+    }
+
     li{
         margin-right: 5px;
 
@@ -38,6 +42,10 @@
     @include pad-lg(){
         margin-left: 39px;
     }
+
+    @include phone-md(){
+        margin-left: 15px;
+    }
 }
 
 // tag樣式
@@ -55,6 +63,10 @@
             line-height: 25px;
         }
 
+        @include phone-md(){
+            line-height: 35px;
+        }
+
         &:hover{
             color: $hover-color;
         }
@@ -70,6 +82,12 @@
         margin-left: 39px;
     }
 
+    @include phone-md(){
+        flex-direction: column;
+        margin-left: 0;
+        padding: 0 15px;
+    }
+
     .article-content{
         max-width: 825px;
         padding: 0;
@@ -81,6 +99,11 @@
 
         @include pad-md(){
             max-width: 510px;
+        }
+
+        @include phone-md(){
+            margin-right: 0;
+            max-width: 100%;
         }
     
         .article-title{
@@ -116,6 +139,10 @@
             @include pad-md(){
                 width: 510px;
             }
+
+            @include phone-md(){
+                width: 100%;
+            }        
         }
 
         // 介紹文字
@@ -166,6 +193,12 @@
             align-items: center;
             margin-bottom: 160px;
 
+            @include phone-md(){
+                margin-bottom: 30px;
+                flex-direction: column;
+                align-items: start;
+            }
+
             li{
                 a{
                     display: flex;
@@ -188,13 +221,23 @@
         // 下一篇連結反向排列
         .reserve{
             flex-direction: row-reverse;
+
+            @include phone-md(){
+                flex-direction: row;
+            }
         }
     }
 
     // 右側tag選單
     .tag-list{
         width: 150px;
+        display: flex;
+        flex-wrap: wrap;
         
+        @include phone-md(){
+            width: 100%;
+        }
+
         li{
             display: flex;
             align-items: center;

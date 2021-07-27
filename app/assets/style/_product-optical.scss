@@ -28,12 +28,25 @@
                }
             }
 
+            @include phone-md(){
+                width: 90%;
+                margin-bottom: 32px;
+
+                &:nth-child(2n){
+                    margin-left: 0px;
+                }
+            }
+
             //商品預覽圖
             .img-box{
                 height: 164px;
                 overflow: hidden;
                 @include bg-cover;
                 cursor: pointer;
+
+                @include phone-md(){
+                    height: 330px;
+                }
 
                 &:hover{
                     box-shadow: 0px 2px 6px #00000029;

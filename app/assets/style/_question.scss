@@ -8,6 +8,12 @@
     @include pad-lg(){
         margin-left: 39px;
     }
+
+    @include phone-md(){
+        font-size: 20px;
+        margin-bottom: 24px;
+        margin-left: 15px;
+    }
 }
 
 //常見問題內容
@@ -19,6 +25,11 @@
         margin-left: 39px;
     }
 
+    @include phone-md(){
+        margin-left: 0;
+        padding: 15px;
+    }
+
     li{
         margin-bottom: 32px;
 
@@ -28,6 +39,10 @@
             line-height: 23px;
             font-weight: bold;
             margin-bottom: 16px;
+
+            @include phone-md(){
+                font-size: 16px;
+            }
         }
 
         //回答
@@ -35,6 +50,12 @@
             font-size: 16px;
             line-height: 24px;
             padding: 0 80px;
+
+            @include phone-md(){
+                font-size: 14px;
+                line-height: 21px;
+                padding: 0;
+            }
         }
     }
 

@@ -8,6 +8,11 @@
         margin-bottom: 24px;  
     }
 
+    @include phone-md(){
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
     label{
         font-size: 24px;
         margin-right: 20px;
@@ -15,6 +20,11 @@
         @include pad-md(){
             font-size: 16px;
             line-height: 30px;
+        }
+
+        @include phone-md(){
+            font-size: 14px;
+            margin-right: 12px;
         }
     }
     select{
@@ -26,8 +36,11 @@
             width: 237px;
             padding: 10px 16px;
         }
-    }
 
+        @include phone-md(){
+            width: 85%;
+        }
+    }
 }
 
 //門市據點資訊
@@ -40,6 +53,11 @@
         padding: 0 39px;
         justify-content: space-between;
         margin-bottom: 96px;  
+    }
+
+    @include phone-md(){
+        margin-bottom: 56px;
+        padding: 0 20px;
     }
 
     .border{
@@ -68,6 +86,7 @@
         }
 
         @include pad-md(){
+            max-width: 330px;  
             margin-right: 0px;
             margin-bottom: 20px;  
             
@@ -76,14 +95,14 @@
             }
         }
 
+        @include phone-md(){
+            max-width: 540px;
+        }
+
         //門市預覽圖
         .img-box{
             height: 224px;
             @include bg-cover;
-        }
-
-        @include pad-md(){
-            max-width: 330px;       
         }
 
         //門市名稱
@@ -147,10 +166,14 @@
             }
 
             @include pad-md(){
-                max-width: 330px; 
+                width: 330px; 
                 font-size: 14px;
                 line-height: 21px;
                 padding: 16px 103px;      
+            }
+
+            @include phone-md(){
+                width: 540px;
             }
 
             &:hover{
