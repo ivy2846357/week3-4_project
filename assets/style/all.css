@@ -1604,9 +1604,6 @@ html {
       margin-left: 15px; } }
   .breadcrumb li {
     margin-right: 5px; }
-    .breadcrumb li:after {
-      content: '/';
-      margin-left: 5px; }
     .breadcrumb li a {
       color: #000;
       text-decoration: none; }
@@ -1614,6 +1611,9 @@ html {
         color: #AA0601; }
   .breadcrumb .breadcrumb-active {
     color: #AA0601; }
+
+.breadcrumb li + li:before {
+  content: " / "; }
 
 .tags {
   display: -webkit-box;
