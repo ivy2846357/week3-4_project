@@ -38,7 +38,7 @@
         }
 
         @include phone-md(){
-            width: 85%;
+            width: 75%;
         }
     }
 }
@@ -58,23 +58,24 @@
     @include phone-md(){
         margin-bottom: 56px;
         padding: 0 20px;
+        justify-content: center;
     }
 
     .border{
         border: 1px solid #00000020;
     }
 
-    li{
-        max-width: 350px;
+    .store-info{
+        width: 31%;    
         margin-right: 30px;
-        margin-bottom: 32px;
+        margin-bottom: 20px;
 
         &:nth-child(3n){
             margin-right: 0px;
         }
 
         @include pad-lg(){
-            max-width: 420px;
+            width: 48%;
 
             &:nth-child(3n){
                 margin-right: 30px;
@@ -86,17 +87,13 @@
         }
 
         @include pad-md(){
-            max-width: 330px;  
+            width: 100%;
             margin-right: 0px;
             margin-bottom: 20px;  
             
             &:nth-child(3n){
                 margin-right: 0px;
             }
-        }
-
-        @include phone-md(){
-            max-width: 540px;
         }
 
         //門市預覽圖
@@ -147,8 +144,7 @@
 
         //詳細資訊按鈕
         a{
-            width: 350px;
-            padding: 20px 137px;
+            padding: 20px 120px;
             display: block;
             background-color: #000;
             color: #FFF;
@@ -161,19 +157,10 @@
             text-align: center;
             @include transition;
 
-            @include pad-lg(){
-                width: 420px; 
-            }
-
             @include pad-md(){
-                width: 330px; 
                 font-size: 14px;
                 line-height: 21px;
                 padding: 16px 103px;      
-            }
-
-            @include phone-md(){
-                width: 540px;
             }
 
             &:hover{

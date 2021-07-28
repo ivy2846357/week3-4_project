@@ -21,7 +21,7 @@
         }
 
         @include phone-md(){
-            left: 25%;
+            left: 20%;
         }
 
         @include phone-sm(){
@@ -89,7 +89,7 @@
 
             @include phone-md(){
                 width: 100%;
-                padding: 0 100px;
+                padding: 0 50px;
                 margin-bottom: 40px;
                 
                 &:nth-last-child(1){

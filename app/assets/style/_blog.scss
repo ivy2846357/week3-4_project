@@ -163,6 +163,8 @@
     }
 }
 
-.blog-nav-dn, .article-dn{
-    display: none;
+@include phone-md(){
+    .blog-nav-dn, .article-dn{
+        display: none;
+    }
 }

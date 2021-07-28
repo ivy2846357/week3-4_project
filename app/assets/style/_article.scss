@@ -107,25 +107,39 @@
         }
     
         .article-title{
+            margin-bottom: 25px;
             
-            // 文章標題
-            h2{
-                font-size: 48px;
-                line-height: 95px;
+            li{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
 
-                @include pad-md(){
+                // 文章標題
+                h2{
+                    font-size: 48px;
+                    line-height: 95px;
+
+                    @include pad-md(){
                     font-size: 32px;
                     line-height: 30px;
+                    }
                 }
-            }
     
-            // 文章副標題
-            h3{
-                font-size: 28px;
-                line-height: 42px;
+                // 文章副標題
+                h3{
+                    font-size: 28px;
+                    line-height: 42px;
 
-                @include pad-md(){
+                    @include pad-md(){
                     font-size: 16px;
+                    }
+                }
+
+                //日期
+                h4{
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: #6C6C6C;
                 }
             }
         }
@@ -229,13 +243,15 @@
     }
 
     // 右側tag選單
+
+
+
     .tag-list{
-        width: 150px;
-        display: flex;
-        flex-wrap: wrap;
+        width: 30%;
         
         @include phone-md(){
             width: 100%;
+            margin-bottom: 56px;
         }
 
         li{
@@ -267,6 +283,11 @@
                 }
             }
         }
-       }
+
+        .tag-inline{
+            display: inline-block;
+        }
+
+    }
 
 }

@@ -38,7 +38,7 @@
         }
 
         @include phone-md(){
-            width: 85%;
+            width: 75%;
         }
     }
 }
@@ -74,7 +74,7 @@
 
         @include phone-md(){
             flex-direction: column;
-            margin-bottom: 0;
+            margin-bottom: 30px;
             padding: 0 15px;
             margin-right: 0;
         }
