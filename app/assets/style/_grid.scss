@@ -20,7 +20,7 @@
 }
 
 @mixin phone-sm{
-    @media (max-width: 376px){
+    @media (max-width: 382px){
         @content;
     }
 }
