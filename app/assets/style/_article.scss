@@ -14,11 +14,6 @@
     li{
         margin-right: 5px;
 
-        &:after{
-            content: '/';
-            margin-left: 5px;
-        }
-
         a{
             color: #000;
             text-decoration: none;
@@ -33,6 +28,11 @@
         color: $bg-red;
     }
 }
+
+//breadcrumb 斜線格式
+.breadcrumb li + li:before {
+    content: " / ";
+ }
 
 // 當頁tag標籤
 .tags{
